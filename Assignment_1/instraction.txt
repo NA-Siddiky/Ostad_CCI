@@ -1,0 +1,55 @@
+Assignment on Introduction
+Write functions that do the following tasks. Also, mention the Time and Space Complexity of your solutions.
+
+
+Task 1: 
+
+
+Given an integer ‘n’, write a function to calculate the factorial of a given non-negative integer 'n'.
+
+
+Constraints: 
+1 <= n <= 10
+
+
+Example 1:
+Input: 5
+Output: 120
+
+
+Explanation: 1 * 2 * 3 * 4 * 5 = 120
+
+
+Example 2:
+Input: 4
+Output: 24
+
+
+Explanation: 1 * 2 * 3 * 4 = 24
+
+
+Task 2: 
+
+
+A function to calculate the sum of all natural numbers between ‘a’ to  'b'.
+
+
+Constraints: 
+1 <= a, b <= 10^5
+
+
+Example 1:
+Input: a = 1, b = 4
+Output: 10
+
+
+Explanation: 1 + 2 + 3 + 4 = 10
+
+
+Example 2:
+Input: a = 10, b = 6
+Output: 40
+
+
+Explanation: 10 + 9 + 8 + 7 + 6 = 40
+
