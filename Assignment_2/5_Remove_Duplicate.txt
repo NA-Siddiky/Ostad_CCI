@@ -1,0 +1,10 @@
+Remove Duplicate
+
+Problem Statement
+You are given an array of integers. The integers are sorted in non decreasing order. You have to remove the duplicate integers.
+
+Input
+The input consists of two lines. First one having one integer N. Second line contains N space seperated integers between 1 and N.
+
+Output
+Print the array after removing the duplicates. You have to print them in sorted order.
