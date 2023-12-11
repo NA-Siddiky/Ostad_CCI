@@ -1,32 +1,37 @@
 function main(input) {
-    let inputArr = input.trim().split('\n').slice(1).map(interval => interval.split(' ').map(Number));
-    let result = mergeOverlappingIntervals(inputArr);
-    result.forEach(interval => console.log(interval.join(' ')));
-}
+  const intervals = input
+    .trim()
+    .split("\n")
+    .slice(1)
+    .map((line) => line.split(" ").map(Number));
 
-function mergeOverlappingIntervals(intervals) {
-    if (intervals.length <= 1) return intervals;
+  intervals.sort((a, b) => a[0] - b[0]);
 
-    intervals.sort((a, b) => a[0] - b[0]);
+  const merged = [];
 
-    let merged = [intervals[0]];
+  let current = intervals[0];
 
-    for (let i = 1; i < intervals.length; i++) {
-        if (intervals[i][0] <= merged[merged.length - 1][1]) {
-            merged[merged.length - 1][1] = Math.max(intervals[i][1], merged[merged.length - 1][1]);
-        } else {
-            merged.push(intervals[i]);
-        }
+  for (let i = 1; i < intervals.length; i++) {
+    const nextInterval = intervals[i];
+
+    if (current[1] >= nextInterval[0]) {
+      current[1] = Math.max(current[1], nextInterval[1]);
+    } else {
+      merged.push(current);
+      current = nextInterval;
     }
+  }
 
-    return merged;
+  merged.push(current);
+
+  merged.forEach((interval) => console.log(interval.join(" ")));
 }
 
 let input = "";
-process.stdin.on('data', (chunk) => {
-    input += chunk;
+process.stdin.on("data", (chunk) => {
+  input += chunk;
 });
 
-process.stdin.on('end', () => {
-    main(input);
+process.stdin.on("end", () => {
+  main(input.trim());
 });
