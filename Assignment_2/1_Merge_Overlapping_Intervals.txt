@@ -1,0 +1,7 @@
+Merge Overlapping Intervals
+
+Problem Statement
+You are given an array of intervals. You have to merge the overlapping intervals and print them in sorted order of their start time.
+
+Output
+Print the intervals after merging. Print them in sorted order of their start time.
