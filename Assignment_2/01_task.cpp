@@ -1,56 +1,63 @@
-// Include necessary libraries
 #include <iostream>
 #include <unordered_map>
 #include <vector>
 
 using namespace std;
 
-using difference_type = long long;
-
-vector<int> twoSum(vector<int> &nums, int target)
+vector<int> twoSumAndMaxProfit(vector<int> &prices)
 {
     unordered_map<int, int> seen;
+    int minPrice = INT_MAX, maxProfit = 0;
 
-    for (int i = 0; i < nums.size(); ++i)
+    for (int i = 0; i < prices.size(); ++i)
     {
-        difference_type complement = static_cast<difference_type>(target) - nums[i];
-
-        if (seen.find(complement) != seen.end())
+        if (seen.find(prices[i]) != seen.end())
         {
-            vector<int> result;
-            result.push_back(seen[complement]);
-            result.push_back(i);
-            return result;
+            return {seen[prices[i]], i};
         }
-        seen[nums[i]] = i;
+        seen[prices[i]] = i;
+
+        minPrice = min(minPrice, prices[i]);
+        maxProfit = max(maxProfit, prices[i] - minPrice);
     }
 
-    throw invalid_argument("No two sum solution");
+    if (!seen.empty())
+    {
+        return {seen.begin()->first, seen.begin()->second};
+    }
+    else if (minPrice != INT_MAX)
+    {
+        return maxProfit;
+    }
+    else
+    {
+        throw invalid_argument("No solution found");
+    }
 }
 
 int main()
 {
-    vector<int> nums;
-    int target;
+    vector<int> prices;
+    int num;
 
     cout << "Enter the numbers: ";
-    int num;
     while (cin >> num)
     {
-        nums.push_back(num);
+        prices.push_back(num);
     }
-
-    cout << "Enter the target: ";
-    cin >> target;
 
     try
     {
-        vector<int> result = twoSum(nums, target);
-        for (int i : result)
+        vector<int> result = twoSumAndMaxProfit(prices);
+
+        if (result.size() == 2)
         {
-            cout << i << " ";
+            cout << "Output: " << result[0] << " " << result[1] << endl;
         }
-        cout << endl;
+        else
+        {
+            cout << "Maximum profit: " << result << endl;
+        }
     }
     catch (exception &e)
     {
