@@ -1,0 +1,10 @@
+Intersection Of Arrays
+
+Problem Statement
+You are given two arrays of integers of size N and M. You have to find the elements which are in both arrays.
+
+Input
+The input consists of three lines. First one having two integers N and M. Second line contains N space seperated integers. Third line contains M space seperated integers.
+
+Output
+Output will consist of two lines. First line will contain an integer S, the number of elements which are in both arrays. Second line will contain the S integers. You have to print them in ascending order.
