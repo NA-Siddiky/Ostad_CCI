@@ -1,0 +1,10 @@
+Pair sum
+
+Problem Statement
+You are given an array A of non negative integers of size N and an integer S. You have to say whether there is two index i, j ( 1 ≤ i < j ≤ N) such that A[i]+A[j]=S.
+
+Input
+The input consists of two lines. First one having two integers N and S. Second line contains N space seperated integers between 0 and 
+
+Output
+Print Yes if there is such indexes else No.

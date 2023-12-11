@@ -1,0 +1,10 @@
+MEX
+
+Problem Statement
+You are given an array A of non negative integers of size N. You have to find the minimum non-negative integer which is not present in the array.
+
+Input
+The input consists of two lines. First one having one integer N. Second line contains N space seperated integers between 0 and 10 to the 9
+
+Output
+Print the minimum non-negative integer which is not present in the array.
