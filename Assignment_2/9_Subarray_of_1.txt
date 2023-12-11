@@ -1,0 +1,10 @@
+Subarray of 1's
+
+Problem Statement
+You are given an array of 0's and 1's. You have to print the maximum length of the subarray where all the elements of the subarray is 1.
+
+Input
+The input consists of two lines. First one having one integer N. Second line contains N space seperated integers between 0 and 1.
+
+Output
+Print the maximum length of the subarray.
