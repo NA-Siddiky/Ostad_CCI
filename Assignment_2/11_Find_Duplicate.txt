@@ -1,0 +1,10 @@
+Find Duplicate
+
+Problem Statement
+You are given an array of integers. Where all the elements are different except one, your task is to find that element.
+
+Input
+The input consists of two lines. First one having one integer N. Second line contains N space seperated integers between 1 and N.
+
+Output
+Output a single integer which occured twice in the array.
