@@ -1,0 +1,10 @@
+Rotate The Array
+
+Problem Statement
+You are given an array of integers and an integer K. If K=0 you have to rotate the array right by one and if K=1 you have to rotate the array left by one.
+
+Input
+The input consists of two lines. First one having two integers N and K. Second line contains N space seperated integers between 1 and N.
+
+Output
+Output the array after rotating.
