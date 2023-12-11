@@ -1,0 +1,13 @@
+3 Sum
+
+Problem Statement
+You are given an array A of unique integers of size N. You have to count the number of indices 
+i,j,k(1≤i<j<k≤N) such that 
+
+A[i]+A[j]+A[k]=0.
+
+Input
+The input consists of two lines. First one having one integer N. Second line contains N space seperated unique integers between 
+
+Output
+Print the number of indices.
