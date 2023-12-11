@@ -1,0 +1,10 @@
+Max Unsorted Subarray
+
+Problem Statement
+You are given an array of integers. You have to find the maximum subarray, by sorting this makes the full array sorted.
+
+Input
+The input consists of two lines. First one having one integer N. Second line contains N space seperated integers between 
+
+Output
+Print two integers start and end index of the subarray. If there is no subarray then print -1.
