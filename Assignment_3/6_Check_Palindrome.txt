@@ -1,0 +1,12 @@
+Check Palindrome
+
+Problem Statement
+You are given a string 
+S. Your task is check whether the string is palindrome or not. A palindrome is a string that reads the same backward as forward, for example strings "z", "aaa", "aba", "abccba" are palindromes, but strings "ostad", "reality", "ab" are not.
+
+Input
+The input consists of one line. A string containing only lowercase English letters.
+
+Output
+In output print "YES" if string 
+S is palindorme or "NO" otherwise. Print without quotation mark.
