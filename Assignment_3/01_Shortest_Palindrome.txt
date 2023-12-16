@@ -1,0 +1,33 @@
+Shortest Palindrome
+
+Problem Statement
+You are given a string 
+
+S. You can add some characters at the begining of the string. Your task is to create shortest palindrome by adding some (possibly none) characters at the begining of S.
+A palindrome is a string that reads the same backward as forward, for example strings "z", "aaa", "aba", "abccba" are palindromes, but strings "ostad", "reality", "ab" are not.
+Examples:
+If the given string is "bcba" then shortest possible palindrome is "abcba".
+If the given string is "abcba" then shortest possible palindrome is "abcba".
+If the given string is "abcd" then shortest possible palindrome is "dcbabcd".
+
+Input
+The input consists of one line. A string containing only lowercase English letters.
+
+Output
+Output shortest possible palindrome by adding some (possibly none) characters at the begining of S.
+
+Example 1:
+Input:
+bcba
+Output:
+abcba
+Example 2:
+Input:
+abcba
+Output:
+abcba
+Example 3:
+Input:
+abcd
+Output:
+dcbabcd
