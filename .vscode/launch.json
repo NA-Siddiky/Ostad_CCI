@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/siddiky/Development/Education/Course/Ostad/Assignment/Assignment_1",
-      "program": "/Users/siddiky/Development/Education/Course/Ostad/Assignment/Assignment_1/build/Debug/outDebug"
+      "cwd": "/Users/siddiky/Development/Education/Course/Ostad/Assignment/Assignment_2",
+      "program": "/Users/siddiky/Development/Education/Course/Ostad/Assignment/Assignment_2/build/Debug/outDebug"
     }
   ]
 }
