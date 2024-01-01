@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Structure for a node in the linked list
 struct ListNode
 {
     int val;
@@ -9,7 +8,6 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
 };
 
-// Function to reverse the linked list iteratively
 ListNode *reverseList(ListNode *head)
 {
     ListNode *prev = nullptr;
@@ -18,16 +16,15 @@ ListNode *reverseList(ListNode *head)
 
     while (current != nullptr)
     {
-        next = current->next; // Store the next node
-        current->next = prev; // Reverse the link
-        prev = current;       // Update the previous pointer
-        current = next;       // Move to the next node
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
     }
 
-    return prev; // The new head is the former tail
+    return prev;
 }
 
-// Function to create a linked list with given values
 ListNode *createList(int arr[], int n)
 {
     if (n == 0)
@@ -47,7 +44,6 @@ ListNode *createList(int arr[], int n)
     return head;
 }
 
-// Function to print the linked list
 void printList(ListNode *head)
 {
     while (head != nullptr)

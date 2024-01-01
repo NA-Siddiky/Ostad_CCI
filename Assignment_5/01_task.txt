@@ -1,7 +1,6 @@
 Assignment on Linked List
 
-Task 1:
-Write a function that does the following task.
+Task 1: Write a function that does the following task.
 
 
 Given the head of a singly linked list, reverse the list, and return the reversed list.
